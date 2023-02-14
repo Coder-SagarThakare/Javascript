@@ -1,0 +1,25 @@
+
+With the apply() method, you can write a method that can be used on different objects.
+
+The apply() method is similar to the call() method
+
+The Difference Between call() and apply()
+
+1. The call() method takes arguments separately.
+1. The apply() method takes arguments as an array.
+
+The apply() method is very handy if you want to use an array instead of an argument list.
+
+syntax :
+apply(thisArg)
+apply(thisArg, argsArray)
+
+Note: This function is almost identical to call(), except that call() accepts an argument list, while apply() accepts a single array of arguments
+
+In general, fn.apply(null, args) is equivalent to fn(...args) with the parameter spread syntax, except args is expected to be an array-like object in the former case with apply(), and an iterable object in the latter case with spread synta
+
+With the rest parameters and parameter spread syntax, this can be rewritten as:
+
+function wrapper(...args) {
+  return anotherFn(...args);
+}

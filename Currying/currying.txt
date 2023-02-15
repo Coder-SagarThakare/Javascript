@@ -1,0 +1,31 @@
+Currying
+	The number of arguments a function takes is also called arity.function sum takes two arguments (2-arity function) and _sum takes three arguments (3-arity function).
+	Curried functions are constructed by chaining closures by defining and immediately returning their inner functions simultaneously.
+
+Why it’s useful ?
+    1. Currying helps we avoid passing the same variable again and again.
+    2. It helps to create a higher order function
+
+function sum(a, b, c) {
+    return a + b + c;
+}
+sum(1,2,3); // 6
+
+ Let’s create a curried version of the function 
+function sum(a) {
+	return (b) => {
+		return (c) => {
+			return a + b + c
+		}
+	}
+}
+console.log(sum(1)(2)(3)) // 6
+
+We could separate this sum(1)(2)(3) to understand it better:
+
+const sum1 = sum(1);
+const sum2 = sum1(2);
+const result = sum2(3);
+console.log(result); // 6
+
+Currying creates nesting functions according to the number of the arguments of the function. Each function receives an argument. If there is no argument there is no currying.

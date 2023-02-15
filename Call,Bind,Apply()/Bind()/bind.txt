@@ -9,4 +9,4 @@ bind(thisArg, arg1, arg2, /* …, */ argN)
 
 return value : A copy of the given function with the specified this value, and initial arguments (if provided).
 
-bind ek function chi copy return krt . te fun chi copy aapn pahije tvha use kru shakto
+bind ek function chi copy return krt . te fun chi copy aapn pahije tvha use kru shakto 

@@ -1,0 +1,13 @@
+Closure
+	lexical scope:= 
+
+	closure mdhe lexical scope pn important aahe. 
+    Normal programming mdhe jrr aapn ekhada function call
+    kela tyanntr tya function mdhle variable use krt yet nahit.
+    Using closure we can achieve this things.  
+
+
+    closure mdhe aapn using lexical scope variables use kru shakto. 
+    function completely run zalya nntr suddha tyamdhle variable inner function mdhe  use kru shakto 
+
+    A closure is the combination of a function and the lexical environment within which that function was declared. 

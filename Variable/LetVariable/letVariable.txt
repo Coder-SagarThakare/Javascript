@@ -1,0 +1,20 @@
+Let variable
+
+	let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, unlike the var bkeyword, which declares a variable globally, or locally to an entire function regardless of block scope. The other difference between var and let is that the latter can only be accessed after its declaration is reached (see emporal dead zone). For this reason, let declarations are commonly regarded as non-hoisted.
+
+An explanation of why the name "let" was chosen can be found : 
+	
+Let is a mathematical statement that was adopted by early programming languages like Scheme and Basic. Variables are considered low level entities not suitable for higher levels of abstraction, thus the desire of many language designers to introduce similar but more powerful concepts like in Clojure, F#, Scala, where let might mean a value, or a variable that can be assigned, but not changed, which in turn lets the compiler catch more programming errors and optimize code better.
+JavaScript has had var from the beginning, so they just needed another keyword, and just borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible, although in JavaScript let creates block scope local variable instead.
+
+Scoping rules
+	Variables declared by let have their scope in the block for which they are declared, as well as in any contained sub-blocks. In this way, let works very much like var. The main difference is that the scope of a var variable is the entire enclosing function:
+
+The JavaScript exception "can't access lexical declaration `variable' before initialization" 
+occurs when a lexical variable was accessed before it was initialized. 
+This happens within any block statement,
+when let or const variables are accessed before the line in which they are declared is executed.
+A lexical variable was accessed before it was initialized. 
+This happens within any block statement, 
+when variables declared with let or const are accessed before
+the line in which they are declared has been executed.
